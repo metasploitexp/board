@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "dbPassword": "112234",
+    "jwtSecret": "huiSosi"
+    
+}
