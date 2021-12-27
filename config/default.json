@@ -1,12 +1,5 @@
 {
-<<<<<<< HEAD
     "PORT": 5000,
     "dbPassword": "112234",
     "jwtSecret": "huiSosi"
-=======
-    "port": 5000,
-    "dbPassword": "112234",
-    "jwtSecret": "huiSosi"
-    
->>>>>>> b76f082edcea5c1c020461deb0b649f2a049e70d
 }

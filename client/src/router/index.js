@@ -1,5 +1,4 @@
 import {createWebHistory, createRouter} from 'vue-router'
-<<<<<<< HEAD
 import Auth from '../view/AuthPage.vue'
 import Register from '../view/RegPage.vue'
 import middleware from './middleware/auth'
@@ -18,26 +17,6 @@ const routes = [
         path: '/auth',
         name: 'auth',
         component: Auth,
-=======
-import Home from '../views/HomePage.vue'
-import Auth from '../views/AuthPage.vue'
-import Ads from '../views/AdsPage.vue'
-import middleAuth from './middleware/auth'
-import All from '../views/AllPage.vue'
-import Choosen from '../views/ChoosenPage.vue'
-import MyPost from '../views/MyPostPage.vue'
-
-const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: Home,
-        meta: {
-            middleware: [
-                middleAuth
-            ]
-        }
->>>>>>> b76f082edcea5c1c020461deb0b649f2a049e70d
     },
     {
         path: '/all',
@@ -45,7 +24,6 @@ const routes = [
         component: All,
         meta: {
             middleware: [
-<<<<<<< HEAD
                 middleware
             ]
         }
@@ -78,56 +56,11 @@ const routes = [
         meta: {
             middleware: [
                 middleware
-=======
-                middleAuth
-            ]
-        },
-    },
-        {
-            path: '/post/:id',
-            name: 'id',
-            component: Choosen,
-            props: true,
-            meta: {
-                middleware: [
-                    middleAuth
-                ]
-            }
-            
-        },
-    {
-        path: '/auth',
-        name: 'auth',
-        component: Auth,
-    },
-    {
-        path: '/ads',
-        name: 'ads',
-        component: Ads,
-        meta: {
-            middleware: [
-                middleAuth
-            ]
-        },
-    },
-    {
-        path: '/myPost/:user',
-        name: 'user',
-        component: MyPost,
-        props: true,
-        meta: {
-            middleware: [
-                middleAuth
->>>>>>> b76f082edcea5c1c020461deb0b649f2a049e70d
             ]
         }
     }
 ]
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b76f082edcea5c1c020461deb0b649f2a049e70d
 const router = createRouter({
     history: createWebHistory(),
     routes
